@@ -18,8 +18,6 @@ public class MemberServiceV1 {
         memberRepository.update(fromMember.getMoney() - money, fromId);
         validation(toMember);
         memberRepository.update(toMember.getMoney() + money, toId);
-
-
     }
 
     private static void validation(Member toMember) {
