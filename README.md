@@ -15,3 +15,22 @@
 
 - 커넥션풀 사용
   - HikariDataSoruce
+<br>
+<br>
+
+**학습 범위 6-3-1 - 6-3-12**
+- 트랜잭션이란
+  - ACID
+  - 자동커밋, 수동커밋
+  - lock
+  - 조회 락 : `select....for update`
+<br>
+
+- 트랜잭션 처리 테스트
+
+
+
+<br>
+<hr>
+<br>
+
