@@ -27,10 +27,21 @@
 <br>
 
 - 트랜잭션 처리 테스트
+<br>
+<br>
 
+**학습 범위 6-4-1 - **
+- 트랜잭션 추상화
+  - PlatformTransactionManager (Service)
+  - DataSourceUtils (Repository)
+<br>
 
+- 트랜잭션 템플릿 : `txTemplate.executeWithoutResult` 로직을 통해 손쉽게 트랜잭션 처리 가능
+  - TransactionTemplate
 
 <br>
 <hr>
 <br>
+
+
 
