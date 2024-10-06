@@ -52,17 +52,20 @@
   - 예외 전환 시 기존 예외 필수적으로 포함하기 + log로 찍기
 <br>
 
-**학습 범위 6-6-1 - **
+**학습 범위 6-6-1 - 6-6-7**
 - 예외 누수 문제 해결
   - 체크 예외 -> 언체크 예외로 변환하여 throw
   - 기존 예외를 언체크 예외와 함께 던짐
   - 순수한 서비스 로직 구성이 가능
 <br>
 
-
+- db 에러 코드를 예외로 변환
+  - DataAccessException (DB 최상위 예외)
+  - SQLErrorCodeSQLExceptionTranslator 를 통해서 예외 추상화가 되어 있음 -> SQLEXceptionTranslator 인터페이스 활용
+  - 위의 예외 추상화는 `sql-error-codes.xml` 파일을 읽어서 DB별 에러코드를 확인함
+  - 예외 변환기를 사용하면 에러 코드별 예외 클래스를 생성할 필요가 없다.
 <br>
-<hr>
-<br>
 
-
-
+- JdbcTemplate 적용
+  - connection, 예외 처리 등을 전부 처리해줌
+  - SQLEXceptionTranslator도 알아서 처리
